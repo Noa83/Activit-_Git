@@ -106,7 +106,21 @@ boutonSubmit.addEventListener("click", function(){
         var nouveauElementLien = creerElementLien(NouveauLien);
         var precedent = contenu.firstChild;
         contenu.insertBefore(nouveauElementLien, precedent); 
+        
+        //affichage de la confirmation d'ajout
+        var encadre = document.createElement("div");
+        encadre.id = "message";
+        var titreEncadre = document.getElementById("titre").value;
+        encadre.innerText = "Le lien "+ titreEncadre +" a bien été ajouté";
+        encadre.style.color = "black";
+        encadre.style.fontSize = "1,5em";
+        encadre.style.padding = "15px";
+        encadre.style.backgroundColor = "#5ec8dd";
+        encadre.style.marginBottom = "20px";
+        var bouton = document.getElementById("bouton");
+        cadre.insertBefore(encadre, bouton);
 
+        
 
     }
 
