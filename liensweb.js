@@ -120,7 +120,16 @@ boutonSubmit.addEventListener("click", function(){
         var bouton = document.getElementById("bouton");
         cadre.insertBefore(encadre, bouton);
 
-        
+        //reinit du bouton base + vider formulaire
+        var form = document.getElementById("form");
+        form.style.display = "none";
+        var bouton1 = document.getElementById("bouton");
+        bouton1.style.display = "block";
+        document.getElementById("titre").value = "";
+        document.getElementById("url").value = "";
+        document.getElementById("nom").value = "";
+
+       
 
     }
 
