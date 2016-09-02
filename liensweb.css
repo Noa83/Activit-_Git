@@ -1,0 +1,38 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #eee;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+span {
+    font-weight: normal;
+    font-size: 80%;
+}
+
+.lien {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.champ {
+	border: 1px solid grey;
+	margin-right: 15px;
+}
+
+#nom {
+	width: 200px;
+}
+
+#titre {
+	width: 350px;
+}
+
+#url {
+	width: 500px;
+}
+
+form {
+	display: none;
+}
