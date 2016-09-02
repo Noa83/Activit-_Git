@@ -129,7 +129,11 @@ boutonSubmit.addEventListener("click", function(){
         document.getElementById("url").value = "";
         document.getElementById("nom").value = "";
 
-       
+        //Disparition du message apres 2 secondes
+        setTimeout(function () {
+                var encadre = document.getElementById("message");
+                cadre.removeChild(encadre);;
+            }, 2000);
 
     }
 
